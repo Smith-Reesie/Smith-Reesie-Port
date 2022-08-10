@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway+Dots&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		/* font-family: "Great Vibes", cursive; */
+		font-family: "Raleway", sans-serif;
+		/* font-family: "Raleway Dots", cursive; */
+	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+	box-shadow: -6px 8px 24px 3px rgba(251, 161, 40, 0.42);
 }
+
+/* .button:hover {
+	cursor: pointer;
+	background: white;
+	color: #fca61f;
+	border: 1px solid #fca61f;
+} */
