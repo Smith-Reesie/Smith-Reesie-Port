@@ -1,13 +1,8 @@
 @media only screen and (min-width: 0px) and (max-width: 576px) {
-	.hero {
-		display: none;
-	}
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+	.portfolio {
+		height: 100vh;
+	}
 }
-
-/* .home {
-	background-image: url(../assests/heroImage.png);
-	background-size: cover;
-} */

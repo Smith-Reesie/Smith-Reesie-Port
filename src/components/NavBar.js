@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-scroll";
-import Contact from "./Contact";
 
 const NavBar = () => {
 	const [nav, setNav] = useState(false);
@@ -32,12 +31,12 @@ const NavBar = () => {
 		<div className=' flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
 			<div>
 				<Link to='home' smooth duration={400}>
-					<h1 className='text-5xl font-signature ml-2 text-orange-700 sm:text-base  '>
+					<h1 className='text-5xl font-signature ml-2 text-orange-700 md:text-2xl sm:text-base  '>
 						Maurice Smith
 					</h1>
 				</Link>
 			</div>
-			<ul className='hidden lg:flex'>
+			<ul className='lg:flex'>
 				{links.map(({ id, link }) => (
 					<li
 						key={id}
