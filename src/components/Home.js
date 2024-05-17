@@ -13,7 +13,7 @@ const Home = () => {
 			name='home'
 			className=' home lg:h-[109vh] sm:h-[90vh]  w-full bg-gradient-to-b from-black via-black to-orange-800 text-white'
 		>
-			<div
+			{/* <div
 				className='max-w-screen-lg mx-auto flex flex-col items-center
             justify-center h-full px-4 md:flex-row '
 			>
@@ -61,7 +61,7 @@ const Home = () => {
 						className='rounded-2xl mx-auto w-2/3 md:w-full '
 					/>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

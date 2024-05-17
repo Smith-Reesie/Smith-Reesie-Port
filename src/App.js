@@ -8,6 +8,17 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import SocialLinks from "./components/SocialLinks";
+import LogoCube from "./pages/cube";
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	BrowserRouter,
+} from "react-router-dom";
+import Dancer from "./pages/dancer";
+import Model from "./pages/model";
+import Engineer from "./pages/engineer";
+import NoPage from "./pages/NoPage";
 
 const App = () => {
 	// const styles = {
@@ -17,15 +28,26 @@ const App = () => {
 	// 	height: "100vh",
 	// };
 	return (
-		<div className='tech flex flex-col justify-between'>
-			<NavBar />
+		<div>
+			<Router>
+				<Routes>
+					<Route path='/' element={<LogoCube />} />
+					<Route exact path='/home' element={<LogoCube />} />
+					<Route exact path='/model' element={<Model />} />
+					<Route exact path='/engineer' element={<Engineer />} />
+					<Route exact path='/dancer' element={<Dancer />} />
+					<Route path='*' element={<NoPage />} />
+				</Routes>
+			</Router>
+			{/* <NavBar />
 			<Home />
 			<About />
 			<Portfolio />
 			<Skills />
 			<Contact />
 
-			<SocialLinks />
+			<SocialLinks /> */}
+			<LogoCube />
 		</div>
 		// <div style={styles}>
 		// 	<div className='flex items-center justify-center '>
